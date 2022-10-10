@@ -12,6 +12,9 @@
 *{
   padding: 0;
   margin: 0;
+}
+
+body{
   background-color: #0f0f0f;
 }
 
@@ -19,14 +22,18 @@
   margin-top: 50px;
 }
 
+.Feedback{
+  margin-top: 100px;
+}
+
 h1 {
-   color: #fff;
   max-width: auto;
   margin: 10px;
   padding: 5px;
   direction: rtl;
   font: 4rem 'H-techno', sans-serif;
   font-style: normal;
+  color: #fff;
 }
 
 .stroke-pink {
@@ -46,13 +53,13 @@ h1 {
  
 /* lfo9 limen lte7t liser*/
 .paragraph {
-  margin: 20px 10px 20px 0;
+  margin: 15px 10px 0px 0;
   padding: 15px;
-  color: #fff;
   direction: rtl;
-  font: 18px 'H-techno', sans-serif;
+  font: 17px 'H-techno', sans-serif;
   font-style: normal;
-  line-height: 40px;
+  line-height: 35px;
+  color: #fff;
 }
 
 .logo{
@@ -74,7 +81,7 @@ a{
 }
 
 .Server{
-  padding: 15px;
-  margin: 10px;
+  padding: 0px;
+  margin: 15px;
   direction: rtl;
 }
