@@ -1,17 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lalezar&family=Nova+Mono&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@font-face {
+  font-family: "Optien";
+  src: url(fonts/Optien.ttf) ;
+}
+
+@font-face {
+  src: url('fonts/H-Techno.otf.ttf');
+  font-family: 'H-techno';
+  font-style: normal;
+}
 
 *{
   padding: 0;
   margin: 0;
-    background-color: #212121;
+  background-color: #0f0f0f;
 }
 
-h1{
-  color: #fff;
-  font-family: 'Tajawal', sans-serif;
+.container{
+  margin-top: 50px;
 }
 
+h1 {
+   color: #fff;
+  max-width: auto;
+  margin: 10px;
+  padding: 5px;
+  direction: rtl;
+  font: 4rem 'H-techno', sans-serif;
+  font-style: normal;
+}
+
+.stroke-pink {
+  padding: 15px;
+  background-image:linear-gradient(#5865F2,#5865F2);
+  background-position:0 100%;
+  background-size:100% 12px; 
+  background-repeat:no-repeat;
+  
+  animation:change 1s infinite linear alternate;
+}
+
+@keyframes change {
+  from {background-position:0 80%;}
+  to {background-position:0 70%;}
+ }
+ 
+/* lfo9 limen lte7t liser*/
 .paragraph {
+  margin: 20px 10px 20px 0;
+  padding: 15px;
   color: #fff;
-  font-family: 'Tajawal', sans-serif;
+  direction: rtl;
+  font: 18px 'H-techno', sans-serif;
+  font-style: normal;
+  line-height: 40px;
+}
+
+.logo{
+  padding: 5px;
+  margin: 10px;
+  color: #5865F2;
+  font-family: "Optien";
+  font-size: 25px
+}
+
+
+a{
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+  background-color: #5865F2;
+  font-family: "Optien";
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.Server{
+  padding: 15px;
+  margin: 10px;
+  direction: rtl;
 }
