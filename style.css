@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lalezar&family=Nova+Mono&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-body {
-    background-color: #5865F2;
-    font-size: 15pt;
+*{
+  padding: 0;
+  margin: 0;
+    background-color: #212121;
 }
 
 h1{
   color: #fff;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.paragraph {
+  color: #fff;
+  font-family: 'Tajawal', sans-serif;
 }
