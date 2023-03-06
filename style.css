@@ -1,23 +1,19 @@
 @font-face {
-  font-family: "Optien";
-  src: url(fonts/Optien.ttf) ;
-}
-
-@font-face {
-  src: url('fonts/H-Techno.otf.ttf');
-  font-family: 'H-techno';
+  src: url('fonts/Qatar2022Arabic-Heavy.ttf');
+  font-family: 'Qatar2022Arabic-Heavy';
   font-style: normal;
 }
 
 *{
   padding: 0;
   margin: 0;
+  font-family: "Qatar2022Arabic-Heavy";
 }
 
 body{
-  background-color: #0f0f0f;
+  background-color: #EEEEE8;
 }
-
+/*
 .container{
   margin-top: 50px;
 }
@@ -31,14 +27,14 @@ h1 {
   margin: 10px;
   padding: 5px;
   direction: rtl;
-  font: 4rem 'H-techno', sans-serif;
+  font: 2rem 'Qatar2022Arabic-Heavy', sans-serif;
   font-style: normal;
-  color: #fff;
+  color: #000;
 }
 
 .stroke-pink {
   padding: 15px;
-  background-image:linear-gradient(#5865F2,#5865F2);
+  background-image:linear-gradient(#8b1538,#8b1538);
   background-position:0 100%;
   background-size:100% 12px; 
   background-repeat:no-repeat;
@@ -51,31 +47,23 @@ h1 {
   to {background-position:0 70%;}
  }
  
-/* lfo9 limen lte7t liser*/
+lfo9 limen lte7t liser
 .paragraph {
   margin: 15px 10px 0px 0;
   padding: 0;
   direction: rtl;
-  font: 17px 'H-techno', sans-serif;
+  font: 17px 'Qatar2022Arabic-Heavy', sans-serif;
   font-style: normal;
   line-height: 35px;
-  color: #fff;
-}
-
-.logo{
-  padding: 15px;
-  margin: 10px;
-  color: #5865F2;
-  font-family: "Optien";
-  font-size: 25px
+  color: #000;
 }
 
 
 a{
   padding: 10px 20px 10px 20px;
   color: #fff;
-  background-color: #5865F2;
-  font-family: "Optien";
+  background-color: #8b1538;
+  font-family: "Qatar2022Arabic-Heavy";
   border-radius: 25px;
   text-decoration: none;
 }
@@ -84,4 +72,58 @@ a{
   padding: 0px;
   margin: 15px;
   direction: rtl;
+}
+*/
+#img{
+  position: absolute;
+  z-index: 1;
+  right: 50%;
+  left: auto;
+  top: 0px;
+  height: 100%;
+  width: 50%;
+}
+img{
+  height: 150px;
+    -webkit-filter: drop-shadow(5px 5px 50px #222);
+  filter: drop-shadow(5px 5px 50px #222);
+}
+.logo {
+  padding: 15px;
+  color: #fff;
+  font-family: "Qatar2022Arabic-Heavy";
+  font-size: 25px;
+  background-color: #8b1538;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  border-bottom: solid 10px #5b0d25;
+  background-image: url("pattern.png");
+}
+h2 {
+  direction: rtl;
+}
+h1{
+  color: #8b1538;
+  font-family: "Qatar2022Arabic-Heavy";
+  font-size: 50px;
+}
+#head{
+  text-align: center;
+  margin-top: 50px;
+}
+#container{
+  position: relative;
+  height: 100px;
+  margin-top: 50px;
+}
+.centered-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 80%;
+}
+.row{
+  direction: rtl;
+  height: 20px;
 }
