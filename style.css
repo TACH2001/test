@@ -4,126 +4,84 @@
   font-style: normal;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  font-family: "Qatar2022Arabic-Heavy";
-}
-
-body{
-  background-color: #EEEEE8;
-}
-/*
-.container{
-  margin-top: 50px;
-}
-
-.Feedback{
-  margin-top: 100px;
-}
-
-h1 {
-  max-width: auto;
-  margin: 10px;
-  padding: 5px;
-  direction: rtl;
-  font: 2rem 'Qatar2022Arabic-Heavy', sans-serif;
-  font-style: normal;
-  color: #000;
-}
-
-.stroke-pink {
-  padding: 15px;
-  background-image:linear-gradient(#8b1538,#8b1538);
-  background-position:0 100%;
-  background-size:100% 12px; 
-  background-repeat:no-repeat;
+:root{
+  --main-radius:5px;
+  --main-padding:5px;
   
-  animation:change 1s infinite linear alternate;
 }
 
-@keyframes change {
-  from {background-position:0 80%;}
-  to {background-position:0 70%;}
- }
- 
-lfo9 limen lte7t liser
-.paragraph {
-  margin: 15px 10px 0px 0;
-  padding: 0;
-  direction: rtl;
-  font: 17px 'Qatar2022Arabic-Heavy', sans-serif;
-  font-style: normal;
-  line-height: 35px;
-  color: #000;
-}
-
-
-a{
-  padding: 10px 20px 10px 20px;
-  color: #fff;
-  background-color: #8b1538;
-  font-family: "Qatar2022Arabic-Heavy";
-  border-radius: 25px;
-  text-decoration: none;
-}
-
-.Server{
-  padding: 0px;
-  margin: 15px;
-  direction: rtl;
-}
-*/
-#img{
-  position: absolute;
-  z-index: 1;
-  right: 50%;
-  left: auto;
-  top: 0px;
-  height: 100%;
-  width: 50%;
-}
-img{
-  height: 150px;
-    -webkit-filter: drop-shadow(5px 5px 50px #222);
-  filter: drop-shadow(5px 5px 50px #222);
-}
-.logo {
-  padding: 15px;
-  color: #fff;
-  font-family: "Qatar2022Arabic-Heavy";
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav"
+  "main main main"
+  "content1 content2 content3 "
+  "footer footer footer";
+  grid-gap: 0.2rem;
+  font-family: 'Qatar2022Arabic-Heavy', sans-serif;
+  font-weight: 800;
   font-size: 25px;
-  background-color: #8b1538;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-  border-bottom: solid 10px #5b0d25;
-  background-image: url("pattern.png");
-}
-h2 {
-  direction: rtl;
-}
-h1{
-  color: #8b1538;
-  font-family: "Qatar2022Arabic-Heavy";
-  font-size: 50px;
-}
-#head{
+  color: #000;
   text-align: center;
-  margin-top: 50px;
+  
 }
-#container{
-  position: relative;
-  height: 100px;
-  margin-top: 50px;
+
+nav{
+  background: #8b1538;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  color: #fff;
+  
 }
-.centered-element {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 80%;
+
+main{
+  background: #EEEEE4;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
-.row{
-  direction: rtl;
-  height: 20px;
+
+#content1{
+  background: #EEEEE4;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding)
+}
+
+#content2{
+  background: #EEEEE4;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding)
+}
+
+#content3{
+  background: #EEEEE4;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding)
+}
+
+footer{
+  background: #EEEEE4;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding)
+}
+
+@media only screen and (max-width: 550px){
+  
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav"
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "footer";
+  }
 }
