@@ -10,6 +10,10 @@
   
 }
 
+body{
+  background: #111;
+}
+
 .container{
   display: grid;
   height: 100vh;
@@ -23,13 +27,13 @@
   font-family: 'Qatar2022Arabic-Heavy', sans-serif;
   font-weight: 800;
   font-size: 25px;
-  color: #000;
+  color: #fff;
   text-align: center;
   
 }
 
 nav{
-  background: #8b1538;
+  
   grid-area: nav;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -38,38 +42,43 @@ nav{
 }
 
 main{
-  background: #EEEEE4;
+  
   grid-area: main;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
 
 #content1{
-  background: #EEEEE4;
+  
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
 }
 
 #content2{
-  background: #EEEEE4;
+ 
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
 }
 
 #content3{
-  background: #EEEEE4;
+ color: #ff0000;
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
 }
 
 footer{
-  background: #EEEEE4;
+  
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
+}
+
+img {
+  border-radius: 50%;
+  width: 35%;
 }
 
 @media only screen and (max-width: 550px){
