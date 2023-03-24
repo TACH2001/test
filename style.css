@@ -54,7 +54,24 @@ main{
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
 }
-#content2 h4{
+
+#content1 a {
+  text-decoration: none;
+  color: #fff
+}
+
+#content3 a {
+  text-decoration: none;
+  color: #ff0000
+}
+
+#content4 a {
+  text-decoration: none;
+  color: #FFFC00
+}
+
+#content2 a{
+  text-decoration: none;
   background: -webkit-linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,14 +84,12 @@ main{
 }
 
 #content3{
- color: #ff0000;
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
 }
 
 #content4 {
-  color: #FFFC00;
   grid-area: content4;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
