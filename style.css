@@ -22,7 +22,7 @@ body{
   grid-template-areas: "nav nav nav"
   "main main main"
   "content1 content2 content3 "
-  "footer footer footer";
+  "content4 content4 content4";
   grid-gap: 0.2rem;
   font-family: 'Qatar2022Arabic-Heavy', sans-serif;
   font-weight: 800;
@@ -52,9 +52,13 @@ main{
   
   grid-area: content1;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding)
+  padding-top: var(--main-padding);
 }
-
+#content2 h4{
+  background: -webkit-linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #content2{
  
   grid-area: content2;
@@ -69,12 +73,13 @@ main{
   padding-top: var(--main-padding)
 }
 
-footer{
-  
-  grid-area: footer;
+#content4 {
+  color: #FFFC00;
+  grid-area: content4;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding)
 }
+
 
 img {
   border-radius: 50%;
@@ -91,6 +96,6 @@ img {
     "content1"
     "content2"
     "content3"
-    "footer";
+    "content4";
   }
 }
